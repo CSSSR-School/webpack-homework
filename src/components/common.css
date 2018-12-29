@@ -1,0 +1,42 @@
+html,
+body {
+    min-height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 15px Helvetica, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.92);
+
+    &:before {
+        content: '';
+        display: block;
+        background: linear-gradient(90deg, #a026bf 0%, #ffc40e 40%, #e82c75 95%);
+        height: 5px;
+        width: 100%;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

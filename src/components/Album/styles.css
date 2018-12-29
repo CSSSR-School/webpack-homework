@@ -1,0 +1,82 @@
+.album {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px, rgba(0, 0, 0, 0.05) 0 5px 10px;
+  background: #fff;
+
+  &__head {
+    position: relative;
+    height: 150px;
+
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 0;
+      opacity: 0.6;
+      z-index: 1;
+      clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 85%);
+      background:
+        linear-gradient(135deg, #e82c75 10%, rgba(9, 88, 236, 0) 80%),
+        linear-gradient(225deg, #ffc40e 10%, rgba(210, 9, 236, 0) 80%),
+        linear-gradient(315deg, #a026bf 100%, rgba(5, 225, 41, 0) 70%);
+    }
+  }
+
+  &__likes {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 35px;
+    padding-top:  10px;
+    padding-bottom: 20px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-right: 8px;
+
+    svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__likes-count {
+    font-size: 20px;
+  }
+
+  &__name {
+    position: relative;
+    display: inline-block;
+    overflow-wrap: break-word;
+    margin: 0;
+    font-size: 32px;
+    z-index: 2;
+    transform: skew(0deg, 5deg);
+    line-height: 1.1;
+    background-image: linear-gradient(to right, rgba(158, 92, 217, 0.7) 100%, rgba(158, 92, 217, 0.7) 50%);
+    border-bottom: 0;
+
+    &:before {
+      content: "";
+      width: 50px;
+      left: 0;
+      top: 0;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      transform: skew(-5deg);
+    }
+  }
+
+  &__description {
+    padding: 15px 15px 20px;
+  }
+}
