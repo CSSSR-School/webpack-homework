@@ -18,10 +18,9 @@ class App extends React.PureComponent {
         <div className='App'>
           <Header/>
           <Content>
-            <Route exact path='/albums' component={Albums} />
+            <Route exact path='/' component={Albums} />
             <Route exact path='/tags' component={Tags} />
             <Route exact path='/add' component={Add} />
-            <Redirect from="/" to="albums" />
           </Content>
         </div>
       </Router>
