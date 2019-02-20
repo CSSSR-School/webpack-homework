@@ -16,11 +16,11 @@ export default function Header() {
       <Content>
         <nav className='header__nav'>
           <div className='header__section'>
-            <Link to='/albums' className='header__link header__link_logo'>
+            <Link to='/' className='header__link header__link_logo'>
               <span className='header__icon' dangerouslySetInnerHTML={{ __html: logoSvg }} />
               FakeGramm
             </Link>
-            <Link to='/albums' className='header__link' activeClassName='header__link_active'>
+            <Link to='/' className='header__link' activeClassName='header__link_active'>
               <span className='header__icon' dangerouslySetInnerHTML={{ __html: albumsSvg }} />
               Albums
             </Link>
